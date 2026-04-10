@@ -101,6 +101,13 @@
     </div>
 
 
+    <a href="{{ route('polis.inddex') }}"
+        class="{{ $baseLink }} {{ request()->routeIs('polis.*')? $active : $inactive }}">
+        <i class="fas fa-hospital w-4 text-center">
+        Manajemen Poli
+        </i>
+    </a>
+
     {{-- ================= LOGOUT ================= --}}
     <div class="p-4 border-t border-white/10">
         <form method="POST" action="/logout">
